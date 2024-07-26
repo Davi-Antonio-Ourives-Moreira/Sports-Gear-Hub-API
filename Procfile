@@ -1,1 +1,1 @@
-web: gunicorn -k uvicorn.workers.UvicornWorker -b 0.0.0.0:10000 main:app
+web: gunicorn -k uvicorn.workers.UvicornWorker -b 127.0.0.1:10000 main:app
