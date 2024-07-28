@@ -2,11 +2,11 @@ import psycopg2 as ps
 
 class Banco_Produtos_Loja_Esportiva(object):
     def __init__(self) -> None:
-        self.dbname = "Sports-Gear-Hub"
-        self.host = "localhost"
-        self.port = "5432"
-        self.user = "postgres"
-        self.password = "postgres"
+        self.user = "denfsjjv"
+        self.password = "0sklxGgyKSz0kDe_l9H9OV2UDUmcRgT1"
+        self.port = 5432
+        self.host = "mahmud.db.elephantsql.com"
+        self.dbname = "denfsjjv"
 
         self.conn = ps.connect(user=self.user,
                                password=self.password,
@@ -54,5 +54,3 @@ class Banco_Produtos_Loja_Esportiva(object):
         self.dados_pesquisados = list(self.cursor.fetchall())
 
         return self.dados_pesquisados
-
-
