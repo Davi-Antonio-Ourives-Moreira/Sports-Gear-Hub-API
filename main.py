@@ -1,6 +1,7 @@
 import fastapi
 from repository import Banco_Produtos_Loja_Esportiva
 import uvicorn
+import os
 
 app = fastapi.FastAPI()
 
@@ -44,4 +45,5 @@ def pesquisa_produtos(produto:str):
     return produtos_pesquisados
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="127.0.0.1", port=5000, log_level="info", reload=True)
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run("main:app", host="0.0.0.0", port=port, log_level="info", reload=True)
