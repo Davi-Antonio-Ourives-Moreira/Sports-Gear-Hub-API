@@ -3,7 +3,7 @@ import psycopg2 as ps
 class Banco_Produtos_Loja_Esportiva(object):
     def __init__(self) -> None:
         self.user = "epqamqkf"
-        self.password = "GBop-1IcCLo-IY5cl7Mt5qbLiMRPOuGW"
+        self.password = "q5ygYv9sqHGMqPHE1MmKCUa4RD2OrGpp"
         self.port = 5432
         self.host = "mahmud.db.elephantsql.com"
         self.dbname = "epqamqkf"
